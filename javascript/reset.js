@@ -1,5 +1,6 @@
 resetGame = function() {
   new ChutesAndLadders;
+  
   document.getElementsByClassName("player1-piece").className = "player-piece player1-piece hidden";
   document.getElementsByClassName("player2-piece").className = "player-piece player2-piece hidden";
   document.getElementsByClassName("player3-piece").className = "player-piece player3-piece hidden";
