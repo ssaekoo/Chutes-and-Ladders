@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/spinner.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/layout.css">
+	</head>
+	<body>
+    <div class="container">
+      <h1><center>Welcome to Chutes and Ladders!</center></h1>
+      <div class="players-list">
+        <div id="player-label1" class="player-label">
+          <div class="player-name">Player 1</div>
+          <div id="player1" class="player-picture"></div>
+        </div>
+        <div id="player-label2" class="player-label">
+          <div class="player-name">Player 2</div>
+          <div id="player2" class="player-picture"></div>
+        </div>
+        <div id="player-label3" class="player-label">
+          <div class="player-name">Player 3</div>
+          <div id="player3" class="player-picture"></div>
+        </div>
+        <div id="player-label4" class="player-label">
+          <div class="player-name">Player 4</div>
+          <div id="player4" class="player-picture"></div>
+        </div>
+      </div>
+      <div id="wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="300">
+          <g id="spinner-board"></g>
+
+          <text x="190" y="90"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">1</text>
+
+          <text x="240" y="170"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">2</text>
+
+          <text x="190" y="250"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">3</text>
+
+          <text x="105" y="250"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">4</text>
+
+          <text x="60" y="170"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">5</text>
+
+          <text x="105" y="90"
+          font-family="sans-serif"
+          font-size="60px"
+          text-anchor="middle">6</text>
+
+          <path id="spinner-arrow" d="M 145 150 L 145 70 L 138 70 L 150 55 L 162 70 L 155 70 155 150 Z" fill="#EEEEEE" stroke="#222222" style="stroke-width:2px"/>
+          <!-- <path id="spinner-arrow" d="M 195 200 L 195 70 L 188 70 L 200 55 L 212 70 L 205 70 205 200 Z" fill="#EEEEEE" stroke="#222222" style="stroke-width:2px"/> -->
+          <circle cx="150" cy="155" r="18" fill="#444444" stroke="#222222" style="stroke-width:2px"/>
+          <circle cx="150" cy="155" r="9" fill="#666666" stroke="#222222" style="stroke-width:2px"/>
+        </svg>
+        <div id="button-holder">
+          <button id="spinner-button" onclick="toggleSpinning();">Player 1's turn</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="gameBoard">
+        <div id="gameBoardPieces">
+        </div>
+      </div>
+    </div>
+    <div id="reset-button-holder">
+      <button id="reset-button" onclick="resetGame();">Reset Game</button>
+    </div>
+    <div class="starting-point">
+        <div id="board0-player1" class="player player-piece player1-piece"></div>
+        <div id="board0-player2" class="player player-piece player2-piece"></div>
+        <div id="board0-player3" class="player player-piece player3-piece"></div>
+        <div id="board0-player4" class="player player-piece player4-piece"></div>
+    </div>
+    <script src="./javascript/gameBoard.js"></script>
+    <script src="./javascript/spinner.js"></script>
+    <script src="./javascript/chutesAndLadders.js"></script>
+    <script src="./javascript/reset.js"></script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.gameBoard {
+  float: right;
+  position: relative;
+  top: 0px;
+  width: 600px;
+  height: 600px;
+}
+
+.game-board-piece{
+  position:relative;
+  height: 60px;
+  width: 60px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float:left
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/gameBoard.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/spinner.css">
+	</head>
+	<body>
+    <h2><center>Welcome to Chutes and Ladders!</center></h2>
+    <div class="content">
+      <div id="wrapper">
+      	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="400">
+      		<g id="spinner-board"></g>
+
+          <text x="260" y="120"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">1</text>
+
+          <text x="320" y="220"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">2</text>
+
+          <text x="260" y="320"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">3</text>
+
+          <text x="135" y="320"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">4</text>
+
+          <text x="90" y="220"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">5</text>
+
+          <text x="135" y="120"
+            font-family="sans-serif"
+            font-size="60px"
+            text-anchor="middle">6</text>
+
+      		<path id="spinner-arrow" d="M 195 200 L 195 70 L 188 70 L 200 55 L 212 70 L 205 70 205 200 Z" fill="#EEEEEE" stroke="#222222" style="stroke-width:2px"/>
+      		<circle cx="200" cy="200" r="18" fill="#444444" stroke="#222222" style="stroke-width:2px"/>
+      		<circle cx="200" cy="200" r="9" fill="#666666" stroke="#222222" style="stroke-width:2px"/>
+      	</svg>
+      	<div id="button-holder">
+      		<button id="spinner-button" onclick="toggleSpinning();">Start the Spinner!</button>
+      	</div>
+      </div>
+      <div class="gameBoard">
+        <div id="gameBoardPieces">
+        </div>
+      </div>
+    </div>
+    <script src="./javascript/gameBoard.js"></script>
+    <script src="./javascript/spinner.js"></script>
+    <script src="./javascript/gamePlay.js"></script>
+	</body>
+</html>

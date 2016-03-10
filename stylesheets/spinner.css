@@ -1,0 +1,21 @@
+* {
+  font-family: Arial, sans-serif;
+}
+#wrapper {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+#button-holder {
+  width: 200px;
+  margin: auto;
+}
+#spinner-button {
+  position: relative;
+  left: 5px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
